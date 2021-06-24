@@ -1,0 +1,54 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --secondary-blue: #85cbe2;
+    --second-blue: #ADD8E6;
+    --textfont: 'montserrat';
+    --text-c: white;
+    --descrip: white;
+    --scrollpoin: #358ef3;
+    --scrolldot: rgb(235, 241, 181);
+    ;
+}
+
+[data-theme="dark"] {
+    --background-color: #222222;
+    --text-color: #fff;
+    --secondary-blue: #F9EFE3;
+    --second-blue: #CEC6BC;
+    --textfont: 'Courier New', Courier, monospace;
+    --text-c: black;
+    --descrip: rgb(70, 70, 70);
+    --scroll: #B8D8BA;
+    --scrollpoin: #FCDDBC;
+}
+
+
+/* [data-theme="dark"].main-wrapper .section-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: #85cbe2;
+    background: #222;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+} */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#theme-switcher {
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    border: none;
+    height: 0px;
+    width: 0px;
+}
+
+
+/* Animation */

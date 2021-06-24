@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    font-family: var(--textfont);
+    color: #1b192a;
+    background-image: url("bg.png");
+    font-size: 14px;
+    padding: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background: midnightblue; */
+    /* height: 100vh; */
+}
+
+
+/* ANIMATION OF THE NAME */
+
+:root {
+    --number-of-characters: 18;
+}
+
+
+/* body {
+    font-family: 'Roboto Mono', monospace;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  } */
+
+h1 {
+    position: relative;
+    display: inline-block;
+}
+
+h1::before,
+h1::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: var(--secondary-blue);
+    opacity: 1;
+    -webkit-animation: typewriter 3s steps(var(--number-of-characters)) 1s forwards;
+    animation: typewriter 3s steps(var(--number-of-characters)) 1s forwards;
+}
+
+h1::after {
+    width: 3px;
+    background: white;
+    -webkit-animation: typewriter 3s steps(var(--number-of-characters)) 1s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+    animation: typewriter 3s steps(var(--number-of-characters)) 1s forwards, blink 1.3s steps(var(--number-of-characters)) infinite;
+}
+
+@-webkit-keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        background: var(--text-c);
+    }
+    49% {
+        background: var(--text-c);
+    }
+    50% {
+        background: transparent;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: var(--text-c);
+    }
+    49% {
+        background: var(--text-c);
+    }
+    50% {
+        background: transparent;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+
+/* Styling the h tags */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #1b192a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.sidebar-wrapper {
+    margin-left: 2px;
+}
+
+.sidebar-wrapper {
+    background: var(--second-blue);
+    position: absolute;
+    right: 0;
+    width: 290px;
+    height: 100%;
+    min-height: 800px;
+    color: var(--text-c);
+}
+
+.sidebar-wrapper a {
+    color: #fff;
+}
+
+.sidebar-wrapper .profile-container {
+    padding: 15px;
+    background: var(--secondary-blue);
+    text-align: center;
+    color: var(--text-c);
+}
+
+.sidebar-wrapper .name {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sidebar-wrapper .tagline {
+    color: var(--descrip);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .profile {
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list .fa {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.sidebar-wrapper .contact-list li {
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .contact-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .contact-list .email .fa {
+    font-size: 14px;
+}
+
+.sidebar-wrapper .container-block {
+    padding: 30px;
+}
+
+.sidebar-wrapper .container-block-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .degree {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.sidebar-wrapper .education-container .item {
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .education-container .item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .education-container .meta {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.sidebar-wrapper .education-container .time {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.sidebar-wrapper .languages-container .lang-desc {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-wrapper .languages-list {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .languages-list li {
+    margin-bottom: 10px;
+}
+
+.sidebar-wrapper .languages-list li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list {
+    margin-bottom: 0;
+}
+
+.sidebar-wrapper .interests-list li {
+    margin-bottom: 10px;
+}
+
+.sidebar-wrapper .interests-list li:last-child {
+    margin-bottom: 0;
+}
+
+.interests-list {
+    color: white;
+}
+
+.main-wrapper {
+    /* background: #ffffff; */
+    padding: 60px;
+    padding-right: 350px;
+}
+
+.main-wrapper .section-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-blue);
+    background: var(--background-color);
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* .section-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* border-bottom: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; */
+
+
+/* transition-delay: 0s;
+    transform: translate3d(0, 0.2em, 0);
+    transition: opacity 300ms, transform 300ms; */
+
+*/ .main-wrapper .section-title .fa {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    display: inline-block;
+    color: var(--secondary-blue);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+}
+
+.main-wrapper .section {
+    margin-bottom: 60px;
+}
+
+.main-wrapper .experiences-section .item {
+    margin-bottom: 30px;
+}
+
+.main-wrapper .upper-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.main-wrapper .job-title {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.main-wrapper .time {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.main-wrapper .company {
+    margin-bottom: 10px;
+}
+
+.main-wrapper .project-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.main-wrapper .projects-section .intro {
+    margin-bottom: 30px;
+}
+
+.main-wrapper .projects-section .item {
+    margin-bottom: 15px;
+}
+
+.skillset .item {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.skillset .level-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.skillset .level-bar {
+    height: 12px;
+    background: #f5f5f5;
+}
+
+.skillset .level-bar-inner {
+    height: 12px;
+    background: var(--secondary-blue);
+}
+
+.footer {
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.footer .copyright {
+    line-height: 1.6;
+    color: #545E6C;
+    font-size: 13px;
+}
+
+.footer .fa-heart {
+    color: #fb866a;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+
+@media (max-width: 767px) {
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+    }
+    .main-wrapper {
+        padding: 30px;
+    }
+    .main-wrapper .time {
+        position: static;
+        display: block;
+        margin-top: 5px;
+    }
+    .main-wrapper .upper-row {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .skillset .level-title {
+        display: inline-block;
+        width: 30%;
+        margin-bottom: 0;
+    }
+    .skillset .level-bar {
+        display: inline-block;
+        width: 70%;
+        position: relative;
+        top: 1px;
+    }
+    .space {
+        margin-right: 10px;
+    }
+    .achieve {
+        color: rgb(143, 139, 139);
+    }
+    /* .achievet {
+        font-size: auto;
+    } */
+    .achievementlist {
+        list-style: none;
+    }
+    .achievementlist .achieve::before {
+        content: "\2022";
+        /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: var(--secondary-blue);
+        /* Change the color */
+        font-weight: bold;
+        /* If you want it to be bold */
+        display: inline-block;
+        /* Needed to add space between the bullet and the text */
+        width: 1.5em;
+        /* Also needed for space (tweak if needed) */
+        margin-left: -1em;
+        /* Also needed for space (tweak if needed) */
+    }
+    .fa::after {
+        text-decoration: underline;
+    }
+    /* loader */
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .loader {
+        width: 200px;
+        height: 80px;
+        padding-top: 40vh;
+        margin: auto;
+        display: flex;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+        background: var(--text-color);
+        border-radius: 50%;
+        animation: jump 2s linear;
+        margin: 0 15px;
+    }
+    /* .caption {
+        margin: auto;
+        font-family: arial;
+        font-size: 20px;
+        color: white;
+    } */
+    #b {
+        animation-delay: 0.2s;
+    }
+    #c {
+        animation-delay: 0.4s;
+    }
+    @keyframes jump {
+        0% {
+            margin-top: 0;
+        }
+        35% {
+            margin-top: -75px;
+        }
+        70% {
+            margin-top: 0px;
+        }
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+
+/* Ex-Large devices (large desktops, 1200px and up) */

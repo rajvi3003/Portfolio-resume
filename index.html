@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rishabhs Resume</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- <link href="https://s-media-cache-ak0.pinimg.com/736x/82/91/f0/8291f095019cf5d3a9d60e0768d538ff--teacher-portfolio-ideas-portfolio-binder.jpg" rel="shortcut icon" type="image/x-icon"> -->
+
+    <link id="theme-style" type="text/css" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylel.css">
+    <link href="assets/css/pointer.css" rel="stylesheet">
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.documentElement.setAttribute("data-theme", "light");
+
+            // Get our button switcher
+            var themeSwitcher = document.getElementById("theme-switcher");
+
+            // When our button gets clicked
+            themeSwitcher.onclick = function() {
+                // Get the current selected theme, on the first run
+                // it should be `light`
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+
+                // Switch between `dark` and `light`
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+                // Set our currenet theme to the new one
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="container" id="con">
+        <div class="loader">
+            <div class="circle" id="a"></div>
+            <div class="circle" id="b"></div>
+            <div class="circle" id="c"></div>
+        </div>
+        <!-- <div class="caption">We are almost there...</div> -->
+    </div>
+
+    <!-- <style>
+        body {
+            background: #eef7f3;
+        }
+    </style> -->
+    <button id="theme-switcher"><p><span class="glyphicon glyphicon-adjust"></span></p></button>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+
+            <div class="profile-container">
+                <img class="profile img-circle" src="assets/images/profile1.jpg" alt="profile pic">
+                <h1 class="name">Rishabh Malik</h1>
+                <h3 class="tagline">Not a typical guy who's from IIM or IIT</h3>
+            </div>
+
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:therishabhmalik11@gmail.com">Email</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/rishabh-malik-500b8b107/" target="_blank">Rishabh Malik</a></li>
+                    <p><span class="glyphicon glyphicon-earphone"></span><a>  7435915079</p></ul></a>
+                        <p><span class="glyphicon glyphicon-home"></span><a>  Surat, India</p></a>
+                </ul>
+            </div>
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">CFA Level III Candidate
+                    </h4>
+                    <h5 class="meta">CFA Institute <br> 06/2018 - Present</h5>
+                    <div class="time"><i>Courses</i></div>
+                    <div class="time">Completed CFA level 1 and 2
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="degree">Finexpert
+                    </h4>
+                    <h5 class="meta">Finnacle Shah Classes <br> 01/2017 - 05/2018</h5>
+                    <div class="time"><i>Courses</i></div>
+                    <div class="time"><span class="space">World Economy</span> <span>Equity Market</span>
+                    </div>
+                    <div class="time"><span class="space">Fixed income</span> <span>Personal Finance</span>
+                    </div>
+                    <div class="time"><span class="space">Derivative trade</span> <span>Financial Model</span>
+                    </div>
+                    <div class="time"><span class="space">Corporate Finance</span> <span>Equity Market</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="degree">Bachelor Of Commerce
+                    </h4>
+                    <h5 class="meta">Himalayan University<br>07/2016 - 07/2019, </h5>
+                    <div class="time"><i>Courses</i></div>
+                    <div class="time"><span class="space">Accounting</span> <span>Statistics</span>
+                    </div>
+                    <div class="time"><span class="space">Management</span> <span>Economics</span>
+                    </div>
+                </div>
+            </div>
+            <!--//education-container-->
+
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>English <span class="lang-desc">(Limited working proficiency)</span></li>
+                    <li>Hindi <span class="lang-desc">(Native)</span></li>
+                    <li>Gujarati <span class="lang-desc">(Native)</span></li>
+                </ul>
+            </div>
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Running</li>
+                    <li>Meditation</li>
+                    <li>Derivatives</li>
+                    <li>Music</li>
+                    <li>Reading</li>
+                    <li>Blogging</li>
+                    <li>Networking</li>
+                </ul>
+            </div>
+
+        </div>
+        <!--//sidebar-wrapper-->
+
+        <div class="main-wrapper">
+
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i> Profile</h2>
+                <div class="summary">
+                    <p>In a coordinate plane, everything begins at the origin (0,0). Life, on the other hand, can put you in any quadrant. Horizontal x axis being skill and vertical y axis being luck, a person can be on any quadrant. what can we do? keep
+                        on developing the only thing we can control "X Factor" i.e Skill.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section projects-section">
+
+                <section class="section experiences-section">
+                    <h2 class="section-title"> <span class="glyphicon glyphicon-star-empty"></span>
+                        </i>Achievements</h2>
+                    <!-- <div class="intro">
+                        <p>Currently, I am working on projects related to IOT and ML and I am also passionate about number theory in which I am doing research with my friend<a href="https://azizl.github.io"> Aziz Lokhandwala</a>. I am also learning basics
+                            of algorrithms and also trying to develop an algorithm in theory of factorisation with him. </p>
+                    </div> -->
+
+                    <ul class="achievementlist">
+                        <li>Contributed to a successful Merger in Facility Management Industry :
+                            <div class="achieve"> https://www.vccircle.com/indianivesh-backed-clr-facility-buys- majority-stake-in-hindustan-facilities</div>
+                        </li><br>
+                        <li>Contributed to a successful Acquisition :
+                            <div class="achieve">https://www.vccircle.com/clr-facility-services-picks-up-majority- stake-in-dk-hospitality/</div>
+                        </li><br>
+                        <li>CFA level 1 : <br>
+                            <div class="achieve">Scored 90th Percentile</div>
+                        </li><br>
+                        <li>CFA level 2 : <br>
+                            <div class="achieve">Scored 90th Percentile</div>
+                        </li><br>
+                        <li>Early Bird :<br>
+                            <div class="achieve"> Got into Investment Banking at the age of 20
+                            </div>
+                        </li><br>
+                        <li>Trade Wars :<br>
+                            <div class="achieve"> Secured first position in a trading competition held in South Gujarat University</div>
+                        </li>
+                    </ul>
+
+
+
+                </section>
+
+                <section class="section experiences-section">
+                    <h2 class="section-title"><i class="fa fa-briefcase"></i> Work Experiences</h2>
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Investment Banking Associate</h3>
+                                <div class="time">05/2018 - 03/2020</div>
+
+                            </div>
+                            <div class="company"><a href="https://www.dealslover.net">Proficio Advisors</a></div>
+                        </div>
+                        <p><i>http://proficioadvisors.com/</i></p>
+                        <p><i>Achievements/Tasks</i></p>
+                        <div class="details">
+                            <p> Really won't bother you with boring details but learnt a lot about Valuation / M&A / Fund Raising and Management Consultancy</p>
+                        </div>
+                        <p><i>Contact: Anuj Agarwal - +919152097189</i></p>
+                    </div>
+                </section>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Technical Analyst</h3>
+                            <div class="time">06/2016 - 05/2017, </div>
+                        </div>
+                        <div class="company">Apex Gems
+                        </div>
+                    </div>
+                    <p><i>http://proficioadvisors.com/</i></p>
+                    <p><i>Achievements/Tasks</i></p>
+                    <div class="details">
+                        <p>Irrelevant to you really, but just want to say I represented my company in Hong Kong world trade expo</p>
+                    </div>
+                    <p><i>Contact: Amit Shah - +919374722745</i></p>
+                </div>
+            </section>
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">Manager</h3>
+                        <div class="time">06/2015 - 02/2016</div>
+
+                    </div>
+                    <div class="company"><a href="https://www.dealslover.net">Vocman India pvt. ltd</a></div>
+                </div>
+                <p><i>http://proficioadvisors.com/</i></p>
+                <p><i>Achievements/Tasks</i></p>
+                <div class="details">
+                    <p> A high profit making government project masked as Social service - Learnt to be "Jugaadu"</p>
+                </div>
+                <p><i>Contact: Rekha Bagga - +919910204171</i></p>
+            </div>
+            </section>
+            <!--//section-->
+
+            <br>
+            <br>
+            <br>
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i> Technical Skills</h2>
+                <div class="intro">
+                    <p>These are some of the major Skills I've Aquired throughout my career.</p>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Research</h3></span> - <span class="project-tagline">Source Checking / Outreach /
+                        Advanced Google Research.</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Valuation</h3></span> -
+                    <span class="project-tagline">Modelling / DCF / Liquidation / Mutual
+                        Funds / Stocks / Bonds / Derivative
+                        Instruments</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">MS Office</h3></span> - <span class="project-tagline">Word / Powerpoint / Outlook</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Social Media
+                        Marketing</h3></span> -
+                    <span class="project-tagline">Linkedin / Instagram / Customer
+                        Interaction</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Private Company
+                        Analysis</h3></span> -
+                    <span class="project-tagline">Industry Research / MCA documents
+                        evaluation
+                        </span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Financial
+                        Analysis</h3></span> -
+                    <span class="project-tagline">Reading, Understanding and Evaluating
+                        Annual Reports
+                        </span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><h3 class="job-title">Google Drive</h3></span> -
+                    <span class="project-tagline">Forms / Slides / Docs
+                        </span>
+                </div>
+            </section>
+
+
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i> Skills and Proficiency</h2>
+                <div class="skillset">
+                    <div class="item">
+                        <h3 class="level-title">Microsoft Excel</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%" style="width: 90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Microsoft Powerpoint</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%" style="width: 85%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Communication</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%" style="width: 80%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Networking</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="85%" style="width: 85%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--//main-body-->
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/min/pointer.js"></script>
+    <script>
+        init_pointer({
+
+        })
+    </script>
+
+</body>
+
+
+</html>
